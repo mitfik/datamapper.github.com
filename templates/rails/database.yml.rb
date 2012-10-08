@@ -1,5 +1,4 @@
-# TODO think about a better way
-db_name = app_path.split('/').last
+db_name = Rails.application.class.parent_name
 
 database = options[:database].delete('jdbc')
 database = 'postgres' if database == 'postgresql'
