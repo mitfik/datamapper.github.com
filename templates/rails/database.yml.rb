@@ -1,4 +1,4 @@
-db_name = Rails.application.class.parent_name
+db_name = Rails.application.class.parent_name.underscore
 
 database = options[:database].delete('jdbc')
 database = 'postgres' if database == 'postgresql'
